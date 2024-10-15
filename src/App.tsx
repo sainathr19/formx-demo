@@ -8,9 +8,9 @@ import {
   SubmitButton,
   TextArea,
   TextInput,
-} from "formx-test";
+} from "formx-js";
 import "./App.css";
-import { DisplayValues } from "./DisplayValues";
+import { DisplayValues } from "./components/DisplayValues";
 function App() {
   const NameValidators = [
     {
@@ -122,7 +122,7 @@ function App() {
                   { label: "Goa", value: "goa" },
                 ]}
                 placeholder="Select a city"
-                defaultValue={""}
+                defaultValue=""
               />
             </div>
             {/* Submit Button */}

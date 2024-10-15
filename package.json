@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "axios": "^1.7.7",
-    "formx-test": "^1.0.15",
+    "formx-js": "^2.0.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

@@ -1,4 +1,4 @@
-import { useForm } from "formx-test";
+import { useForm } from "formx-js";
 
 export const DisplayValues = () => {
   const { formValues } = useForm();
