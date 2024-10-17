@@ -4,11 +4,13 @@ import {
   FormProvider,
   NumberInput,
   PasswordInput,
+  RadioInput,
   SelectInput,
   SubmitButton,
   TextArea,
   TextInput,
-} from "formx-js";
+} from "formx-test";
+import "formx-test/dist/styles.css";
 import "./App.css";
 import { DisplayValues } from "./components/DisplayValues";
 function App() {
@@ -57,6 +59,8 @@ function App() {
                 validators={NameValidators}
                 placeholder="Enter your first name"
                 debounce={1000}
+                required
+                className="rounded-md"
               />
             </div>
             {/* Age Feild */}
@@ -82,6 +86,7 @@ function App() {
                 placeholder="Enter your email"
                 validators={EmailValidators}
                 debounce={1000}
+                required
               />
             </div>
 
@@ -94,6 +99,7 @@ function App() {
                 id="password"
                 placeholder="Enter your password"
                 debounce={1000}
+                required
               />
             </div>
 
@@ -123,6 +129,19 @@ function App() {
                 ]}
                 placeholder="Select a city"
                 defaultValue=""
+              />
+            </div>
+            {/* Location Select Field */}
+            <div className="flex flex-col gap-1">
+              <label htmlFor="location" className="font-medium">
+                Gender
+              </label>
+              <RadioInput
+                id="gender"
+                options={[
+                  { label: "male", value: "Male" },
+                  { label: "female", value: "Female" },
+                ]}
               />
             </div>
             {/* Submit Button */}
